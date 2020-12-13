@@ -68,16 +68,3 @@ robot -d Results Tests\testName.robot
 ```
 ------------------------------------------------------------
 
-
-```sh
-robot testName.robot
-```
-After every test execution it creates a report.html, by default this report is added to Tests folder. If you want the results to be in another folder specify it by executing
-```sh
-robot -d folderForResults testName.robot
-```
-*Results* folder will be created during execution uder Tests directory or you can create a folder and specify it during execution (exeting should be done from Project folder)
-```sh
-robot -d Results Tests\testName.robot
-```
-------------------------------------------------------------
