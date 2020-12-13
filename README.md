@@ -49,6 +49,7 @@ To use SeleniumLibrary in Robot Framework tests, the library needs to first be i
 
 By default Robot framework goes with Standart libraries which you don't have to install: Builtin, OperatingSystem, String, Processes, Dialogs, Remote, Telnet, DateTime, Collections, Screenshot and XML.I used Built-In Library.
 - ***Built-In Library*** - provides a set of often needed generic keywords. Always automatically available without imports.The provided keywords can be used, for example, for verifications (e.g. Should Be Equal, Should Contain), conversions (e.g. *Convert To Integer*) and for various other purposes (e.g. *Log, Sleep, Set Global Variable, Should be equal*).	
+- ***String*** - library for manipulating strings and verifying their contents.
 ------------------------------------------------------------
 ### 3.How to execute tests
 
@@ -66,15 +67,7 @@ robot -d folderForResults testName.robot
 robot -d Results Tests\testName.robot
 ```
 ------------------------------------------------------------
-#### 2.5 Internal Libraries
 
-By default Robot framework goes with Standart libraries which you don't have to install: Builtin, OperatingSystem, String, Processes, Dialogs, Remote, Telnet, DateTime, Collections, Screenshot and XML. In addition to SeleniumLibrary I used Built-In and String Libraries.
-- ***Built-In Library*** - provides a set of often needed generic keywords. Always automatically available without imports.The provided keywords can be used, for example, for verifications (e.g. Should Be Equal, Should Contain), conversions (e.g. *Convert To Integer*) and for various other purposes (e.g. *Log, Sleep, Set Global Variable, Should be equal*).	
-- ***String*** - library for manipulating strings and verifying their contents.
-------------------------------------------------------------
-### 3.How to execute tests
-
-There are several ways of executing tests(from PyCharm, command line, Task Scheduler, batch file or you can congifure Jenkins). In this project we will run them in 2 ways: from PyCharm and command line. In order to execute tests from PyCharm open Termanal window -> swich to directory where your test are located (e.g. *C:\Users\GitHub\RobotFramework-tutorial\Tests*) -> and execute 
 
 ```sh
 robot testName.robot
