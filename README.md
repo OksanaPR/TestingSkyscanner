@@ -1,5 +1,5 @@
 # Testing TODOS APP
-This is an example on how to test web application with Robotframework and SeleniumLibrary.
+This is an example on how to test web application with Robotframework and SeleniumLibrary. In addition to SeleniumLibrary this project uses BuilIn and String library.
 
 ### 1. Introduction
 [Robot Framework](http://robotframework.org) is an open source automation framework for acceptance testing, acceptance test driven development (ATDD), and robotic process automation (RPA). It has simple plain text syntax (keyword-driven) and it can be extended easily with libraries implemented using Python or Java.
