@@ -1,4 +1,4 @@
 /env/
 user_registartion.py
-geckodriver.log
-selenium-screenshot.png
+*.log
+*.png
