@@ -55,7 +55,7 @@ Move all items to Active again
   Should be equal  ${ACTIVE_LINK_TEXT}  ${LINK_NAME}
   Element Attribute Value Should Be  ${FOCUSED_LINK}  class  selected
 
-Select any item from the list
+Delete any item from the list
   [Arguments]  ${ITEM}  ${ITEM_CLOSE_BUTTON}
   Mouse over  ${ITEM}
   Click element  ${ITEM_CLOSE_BUTTON}

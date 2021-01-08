@@ -19,7 +19,7 @@ TC - Delete random item from todo list
   Add task to todo list  ${ADDED_SENTENCE_AGAIN}  ${TASK6}
   Add random string to todo list  ${TASK7}
   Calculate All items in the list  7
-  Select any item from the list  ${ACTIVE_ITEM_TO_DELETE}  ${ITEM_CLOSE_BUTTON}
+  Delete any item from the list  ${ACTIVE_ITEM_TO_DELETE}  ${ITEM_CLOSE_BUTTON}
   Calculate All items in the list  6
   Verify deleted item is not in the list  ${ACTIVE_ITEM_TO_DELETE}  ${ADDED_NUMBERS}
 
