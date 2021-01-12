@@ -15,15 +15,14 @@ class complexTestsLibrary:
         os.environ['MOZ_HEADLESS'] = '1'
         self.driver = webdriver.Firefox()
         self.driver.get('http://todomvc.com/examples/react/#/')
-        self.driver.implicitly_wait(20)
 
     @keyword
-    def generate_random_sentences(self):
-        element = self.driver.find_element(By.CLASS_NAME, "new-todo")
+    def generate_random_sentences(self, number, total_items_amount):
         words = [["One", "Two", "Three", "Four"], ["red", "yellow", "green", "blue"], ["cats", "dogs", "zebras", "pandas"],["jumped.", "danced.", "wrote poetry.", "cried."]]
-        for i in range(50):
+        for i in range(int(number)):
             sentences = ' '.join([random.choice(w) for w in words])
             self.driver.find_element(By.CLASS_NAME, "new-todo").send_keys(sentences, Keys.ENTER)
         total_items = self.driver.find_element(By.CLASS_NAME, "todo-count")
-        assert total_items.text == '50 items left'
+        assert total_items.text == total_items_amount
+
 

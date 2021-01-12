@@ -1,8 +1,8 @@
 *** Settings ***
 Library  ../Libraries/complexTestsLibrary.py
 
+Test Setup  Open Browser
 
 *** Test Cases ***
 TC - Delete random item
-  Open Browser
-  Generate random sentences
+  Generate Random Sentences  50  50 items left
