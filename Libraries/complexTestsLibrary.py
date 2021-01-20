@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
 import random
 import os
 
@@ -46,4 +47,6 @@ class complexTestsLibrary:
         total_items = self.driver.find_element(By.CLASS_NAME, "todo-count")
         assert total_items.text == total_items_amount
 
-
+    @keyword
+    def move_items_to_completed(self):
+        self.driver.find_element(By.CLASS_NAME, "toggle-all").click()
