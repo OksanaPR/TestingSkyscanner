@@ -5,9 +5,8 @@ Library  BuiltIn
 
 Resource  ../Resources/basic_tests_keywords_and_locators.robot
 
-Test Setup   Run Keywords  Open todo list  Add item to todos list
+Test Setup  Run keywords  Open web application  Add item to todos list
 Test Teardown  Close All Browsers
-
 
 *** Test Cases ***
 Delete added item from todos list

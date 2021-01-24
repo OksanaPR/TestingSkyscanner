@@ -82,5 +82,5 @@ ${NEW_ITEM_VALUE}  newItemAdded
 ${ALL_LINK}  xpath://*[@href="#/"]
 ${ACTIVE_LINK}  xpath://*[@href="#/active"]
 ${COMPELETED_LINK}  xpath://*[@href="#/completed"]
-${TODO_COUNT}  xpath://*[@class="todo-count"]
+${TODO_COUNT}  xpath://*[@class="todo-count"
 ${ARROW_BUTTON}  xpath://label[@for="toggle-all"]

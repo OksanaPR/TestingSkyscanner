@@ -20,8 +20,6 @@ TC - Delete item from todo list
   Calculate All items in the list  3
   Verify deleted item is not in the list  ${ACTIVE_ITEM_TO_DELETE}  ${ADDED_NUMBERS}
 
-
-
 TC - Verify All, Active, Completed functionality
   &{params}=  	Create Dictionary  ${ADDED_SENTENCE}=${TASK1}  ${ADDED_SEVERAL_SENTENCES}=${TASK2}  ${ADDED_NUMBERS}=${TASK3}  ${ADDED_CHARACKTERS}=${TASK4}
   FOR  ${key}  ${value}  IN  &{params}

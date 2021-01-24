@@ -7,7 +7,6 @@ import random
 import os
 
 
-
 class complexTestsLibrary:
     ROBOT_LIBRARY_SCOPE = 'TESTS'
     URL = 'http://todomvc.com/examples/react/#/'
@@ -25,6 +24,7 @@ class complexTestsLibrary:
     completed_button = 'a[href="#/completed"]'
     completed_amount = 'completed'
 
+    
     @keyword
     def open_browser(self):
         os.environ['MOZ_HEADLESS'] = '1'
