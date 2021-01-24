@@ -1,8 +1,9 @@
 *** Keywords ***
-
-Add item to todos list
+Open todo list
   Open browser  ${TODOLIST_URL}  ${BROWSER}
   Wait Until Page Contains Element  ${PLACEHOLDER}
+
+Add item to todos list
   ${TASK} =	Generate Random String	12
   Input text  ${TEXT_FIELDS}  ${TASK}
   Press keys  ${TEXT_FIELDS}  ENTER
