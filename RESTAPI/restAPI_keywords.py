@@ -12,7 +12,13 @@ class restAPI_keywords:
     print(requests.status_codes)
 
     @keyword
-    def validateDataResponse(self):
+    def validateJson(jsonData):
+        try:
+            validate(instance=jsonData, schema=schemaToValidate)
+        except jsonschema.exceptions.ValidationError as err:
+            return False
+        return True
+
         schemaToValidate = {
             "type": "object",
             "results": {
@@ -21,14 +27,6 @@ class restAPI_keywords:
                 "mass": {"type": "number"}
             }
         }
-
-    def validateJson(jsonData):
-        try:
-            validate(instance=jsonData, schema=schemaToValidate)
-        except jsonschema.exceptions.ValidationError as err:
-            return False
-        return True
-
         # Convert to Python object
         jsonData = json.loads(requests.get("https://swapi.dev/api/people/"))
         isValid = validateJson(jsonData)
