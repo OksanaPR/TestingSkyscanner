@@ -2,3 +2,7 @@
 user_registartion.py
 *.log
 *.png
+.venv/
+log.html
+output.xml
+report.html

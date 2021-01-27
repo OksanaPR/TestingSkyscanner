@@ -3,7 +3,8 @@ Library  SeleniumLibrary  run_on_failure=Nothing
 Library  String
 Library  BuiltIn
 
-Resource  ../Resources/basic_tests_keywords_and_locators.robot
+Resource  ../../Resources/basic_tests_keywords_and_locators.robot
+Resource  ../../Resources/complex_tests_keywords_and_locators.robot
 
 Test Setup  Run keywords  Open web application  Add item to todos list
 Test Teardown  Close All Browsers
