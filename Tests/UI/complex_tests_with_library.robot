@@ -1,5 +1,5 @@
 *** Settings ***
-Library  ../Libraries/complexTestsLibrary.py
+Library  ../../Libraries/complexTestsLibrary.py
 
 Test Setup  Open Browser
 Test Teardown  Close Browser

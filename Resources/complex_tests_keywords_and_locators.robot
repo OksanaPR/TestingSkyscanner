@@ -1,5 +1,5 @@
 *** Keywords ***
-Open web application
+Open todo list
   Open browser  ${TODOLIST_URL}  ${BROWSER}
   Wait Until Page Contains Element  ${PLACEHOLDER}
 
